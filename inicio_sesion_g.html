@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="estilos_sesion.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <section class="container inicio_sesion">
+        <h2>Iniciar Sesión</h2>
+        <form action="Gen_login.php" method="post">
+            <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <a href="dar_dir.html" onclick="toggleForm()">Registrarse</a>
+    </section>
+
+    <script>
+        function toggleForm() {
+            var loginForm = document.querySelector('.inicio_sesion');
+            var registerForm = document.querySelector('.registro');
+            if (loginForm.style.display === "none") {
+                loginForm.style.display = "block";
+                registerForm.style.display = "none";
+            } else {
+                loginForm.style.display = "none";
+                registerForm.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

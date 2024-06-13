@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos_ver_citas.css">
+    <title>Ver Registros</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+        </tr>
+        <?php
+        echo "<!-- Antes de incluir ver_cita.php -->";
+        include 'ver_cita.php';
+        echo "<!-- Después de incluir ver_cita.php -->";
+        ?>
+    </table>
+</body>
+</html>
+
+
+

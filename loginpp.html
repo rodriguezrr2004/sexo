@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos_registro.css">
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const idDireccion = urlParams.get('id_direccion');
+            if (idDireccion) {
+                document.getElementById('direccion').value = idDireccion;
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <h2 class="subtitle2">Regístrese</h2>
+        <section class="knowledge2">
+            <div class="knowledge__container2">
+                <section class="price container">
+                    <div class="price__table2">
+                        <div class="registro">
+                            <form class="register-form" action="procesar_registro.php" method="post">
+                                <label for="tipo_usuario">Tipo de Usuario:</label>
+                                <select id="tipo_usuario" name="tipo_usuario" required>
+                                    <option value="paciente">Paciente</option>
+                                </select>
+
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+
+                                <label for="ap_paterno">Apellido Paterno:</label>
+                                <input type="text" id="ap_paterno" name="ap_paterno" required>
+
+                                <label for="ap_materno">Apellido Materno:</label>
+                                <input type="text" id="ap_materno" name="ap_materno">
+
+                                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                                <label for="direccion">Dirección (ID de Dirección):</label>
+                                <input type="number" id="direccion" name="direccion" required>
+
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+
+                                <label for="correo">Correo:</label>
+                                <input type="email" id="correo" name="correo" required>
+
+                                <label for="password">Contraseña:</label>
+                                <input type="password" id="password" name="password" required>
+
+                                <button type="submit" class="price__cta">Registrarse</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

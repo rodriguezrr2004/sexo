@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Dirección</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos_registro.css">
+</head>
+<body>
+    <main>
+        <h2 class="subtitle2">Regístrese</h2>
+        <section class="knowledge2">
+            <div class="knowledge__container2">
+                <section class="price container">
+                    <div class="price__table2">
+                        <div class="registro">
+                            <form class="register-form" action="procesar_dir.php" method="post">
+                                <label for="delegacion">Delegación:</label>
+                                <input type="text" id="delegacion" name="delegacion" required>
+
+                                <label for="numero">Número:</label>
+                                <input type="text" id="numero" name="numero" required>
+
+                                <label for="codigo_postal">Código Postal:</label>
+                                <input type="text" id="codigo_postal" name="codigo_postal" required>
+
+                                <button type="submit" class="price__cta">Registrarse</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

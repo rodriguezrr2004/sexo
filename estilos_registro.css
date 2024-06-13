@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 50px 0; /* Reducir el padding superior */
+    --color-title: #2C3E50; /* Azul oscuro */
+    --color-bg: #ECF0F1; /* Gris claro */
+    --color-text: #2C3E50;
+    --color-primary: #3498DB; /* Azul */
+    --color-secondary: #1ABC9C; /* Verde turquesa */
+    --color-accent: #E74C3C; /* Rojo */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./imagenes/fondo_registro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-text);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: -50px auto 0; /* Mover el contenedor hacia arriba */
+    padding: var(--padding-container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle2 {
+    font-size: 2.5em; /* Cambiar el tamaño del texto del subtítulo */
+    font-weight: 900;
+    color: var(--color-title);
+    margin-bottom: 20px; /* Aumentar el margen inferior del subtítulo */
+    text-align: center;
+}
+
+.knowledge2 {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.knowledge__container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px; /* Mover el formulario hacia arriba */
+}
+
+.register-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.register-form select {
+    border: 1px solid #ccc;
+}
+
+.price__cta {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.price__cta:hover {
+    background-color: var(--color-secondary);
+}
